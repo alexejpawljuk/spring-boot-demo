@@ -1,6 +1,16 @@
 package org.alexej.demo.repository;
 
+import jakarta.persistence.*;
+
+
+@Entity
+@Table(name = "products")
 public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int product_id;
+    @Column(name = "title")
     private String title;
     private double price;
     private String avatarPath;
@@ -8,11 +18,20 @@ public class Product {
 
     public Product() {}
 
-    public Product(String title, double price, String avatarPath, String description) {
+    public Product(int product_id, String title, double price, String avatarPath, String description) {
+        this.product_id = product_id;
         this.title = title;
         this.price = price;
         this.avatarPath = avatarPath;
         this.description = description;
+    }
+
+    public int getProduct_id() {
+        return product_id;
+    }
+
+    public void setProduct_id(int product_id) {
+        this.product_id = product_id;
     }
 
     public String getTitle() {

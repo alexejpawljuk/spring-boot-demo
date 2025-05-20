@@ -2,7 +2,6 @@ package org.alexej.demo.service;
 
 import org.alexej.demo.repository.User;
 import org.springframework.stereotype.Service;
-
 import java.time.LocalDate;
 import java.util.List;
 

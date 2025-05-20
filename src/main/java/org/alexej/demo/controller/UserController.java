@@ -4,7 +4,6 @@ import org.alexej.demo.repository.User;
 import org.alexej.demo.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.util.List;
 
 @RestController
