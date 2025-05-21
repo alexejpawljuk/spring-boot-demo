@@ -5,8 +5,10 @@ import org.alexej.demo.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
+
 @Service
 public class ShopService {
+
 
     private final ProductRepository userRepository;
 
