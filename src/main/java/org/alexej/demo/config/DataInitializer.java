@@ -20,11 +20,10 @@ public class DataInitializer implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         if (productRepository.count() == 0) {
             productRepository.saveAll(List.of(
-               new Product("Product 1", 11.99, "https://", "Some description"),
-               new Product("Product 2", 12.99, "https://", "Some description"),
-               new Product("Product 3", 13.99, "https://", "Some description")
+                    new Product("Premium account", 11, "/static/media/high-quality.6b85a4c802fa70ab4b73e4e179a28234.svg", "A premium account allows the playerList to participate in free tournaments and unlocks a multitude of other opportunities."),
+                    new Product("Ticket", 12, "/static/media/ticket.585a757af2759815a47ce1d3b018cdb5.svg", "This is an entry ticket to the tournaments organized by the administration of this gaming portal or sponsors.")
             ));
-            System.out.println("Demo users inserted (config/DataInitializer)");
+            System.out.println("Demo products inserted (config/DataInitializer)");
         }
     }
 }

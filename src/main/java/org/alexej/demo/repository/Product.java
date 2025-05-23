@@ -19,7 +19,7 @@ public class Product {
     public Product() {}
 
     public Product(String title, double price, String avatarPath, String description) {
-//        this.product_id = product_id;
+        this.product_id = product_id;
         this.title = title;
         this.price = price;
         this.avatarPath = avatarPath;
